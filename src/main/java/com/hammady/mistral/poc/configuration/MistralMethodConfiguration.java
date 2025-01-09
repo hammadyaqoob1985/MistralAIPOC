@@ -26,6 +26,6 @@ public class MistralMethodConfiguration {
     @Bean
     @Description("Get patient health status")
     public Function<Patient, String> retrievePatientHealthStatus() {
-        return (patient) -> this.patientStatuses.get(patient).status();
+        return (patient) -> this.patientStatuses.getOrDefault(patient,new HealthStatus("Patient with " + patient + " does not exist")).status();
     }
 }
