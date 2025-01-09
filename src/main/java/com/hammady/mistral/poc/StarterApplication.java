@@ -1,4 +1,4 @@
-package com.hammady.ollamachatbot.starter;
+package com.hammady.mistral.poc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
